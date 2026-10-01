@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="t d">
   <title id="t">claude-context-handoff</title>
-  <desc id="d">A context window bar reaching the handoff threshold, then a handoff file, then a fresh pinned session.</desc>
+  <desc id="d">A context window bar reaching the handoff threshold, then a handoff file, then a fresh session. Illustration of the planned flow.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
