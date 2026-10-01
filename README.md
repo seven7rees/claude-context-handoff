@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/license-MIT-2dd4bf" alt="license: MIT">
 </p>
 
-> **Pre-release. Not installable yet.** This repository is public early so the name, design and plan are visible. Nothing here has shipped: every statement on this page describes intended design, not working software. There is no release to install. This notice comes off only when the claims are backed by passing tests. Releases will be announced on this page.
+> **Pre-release. Not installable yet.** This repository is public early so the name, design and plan are visible. Nothing here has shipped: every statement about this project describes intended design, not working software. There is no release to install. This notice comes off only when the claims are backed by passing tests. Releases will be announced on this page.
 
 > claude-context-handoff is an independent open source project. It is not affiliated with, endorsed by, or sponsored by Anthropic. Claude and Claude Code are trademarks of Anthropic, PBC.
 
@@ -29,20 +29,9 @@
 
 `/compact` summarizes the conversation inside the same session. A handoff is designed to write the working state to a file you control and start a clean context. The two are meant to work together: compact buys time, and a handoff is designed to give you a fresh start with explicit next steps.
 
-## Other tools in this space
+## What is the planned focus?
 
-This is a crowded space, and these projects are worth a look:
-
-- [willseltzer/claude-handoff](https://github.com/willseltzer/claude-handoff)
-- [REMvisual/claude-handoff](https://github.com/REMvisual/claude-handoff)
-- [kylesnowschwartz/claude-handoff](https://github.com/kylesnowschwartz/claude-handoff)
-- [Sonovore/claude-code-handoff](https://github.com/Sonovore/claude-code-handoff)
-- [thepushkarp/handoff](https://github.com/thepushkarp/handoff)
-- [parcadei/Continuous-Claude-v3](https://github.com/parcadei/Continuous-Claude-v3)
-
-From the same author: [seven7rees/claude-handoff](https://github.com/seven7rees/claude-handoff), a manual `/handoff` command that this project aims to automate.
-
-The planned focus here is narrower: a configurable threshold that waits for a natural pause, an installer that never overwrites existing settings, and, for the Claude desktop app, a numbered and pinned chain of sessions. None of that has shipped, so compare after the first release.
+The plan is built around three things: a configurable threshold that waits for a natural pause, an installer that never overwrites existing settings, and, for the Claude desktop app, a numbered and pinned chain of sessions. None of that has shipped yet. See [Related projects](#related-projects) below for other approaches. A fair side-by-side comparison will be added after the first release.
 
 ## How will it decide when to hand off?
 
@@ -83,6 +72,19 @@ These are goals, not yet verified. Each is planned to get an automated check bef
 - No telemetry.
 - Local state only.
 - Settings backed up before any change, a clean uninstall, and a per-session opt-out.
+
+## Related projects
+
+Community tools that take on parts of the same problem:
+
+- [willseltzer/claude-handoff](https://github.com/willseltzer/claude-handoff): handoff documents for moving work into a fresh session
+- [REMvisual/claude-handoff](https://github.com/REMvisual/claude-handoff): Claude Code skills for session handoffs that survive context compaction and chain-link across sessions
+- [kylesnowschwartz/claude-handoff](https://github.com/kylesnowschwartz/claude-handoff): a handoff tool that builds on `/compact`
+- [Sonovore/claude-code-handoff](https://github.com/Sonovore/claude-code-handoff): session handoff command and hooks to save and restore context across sessions
+- [thepushkarp/handoff](https://github.com/thepushkarp/handoff): Claude Code plugin to preserve and restore context between sessions
+- [parcadei/Continuous-Claude-v3](https://github.com/parcadei/Continuous-Claude-v3): a broader context management system with hooks, ledgers, handoffs and agent orchestration
+
+From the same author: [seven7rees/claude-handoff](https://github.com/seven7rees/claude-handoff), a manual `/handoff` command that this project aims to automate.
 
 ## License
 
